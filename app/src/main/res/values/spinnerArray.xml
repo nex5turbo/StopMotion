@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fps">
+        <item>4fps</item>
+        <item>8fps</item>
+        <item>16fps</item>
+        <item>24fps</item>
+        <item>30fps</item>
+    </string-array>
+    <string-array name="format">
+        <item>mp4</item>
+        <item>avi</item>
+        <item>mov</item>
+    </string-array>
+    <string-array name="audio">
+        <item>현재 오디오</item>
+        <item>오디오 없음</item>
+    </string-array>
+</resources>

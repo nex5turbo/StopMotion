@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoCreateActivity">
+
+    <Spinner
+        android:id="@+id/fps_spinner"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:entries="@array/fps"
+        app:layout_constraintBottom_toBottomOf="@+id/format_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/format_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/format_spinner" />
+
+    <Spinner
+        android:id="@+id/format_spinner"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:entries="@array/format"
+        app:layout_constraintBottom_toTopOf="@+id/make_file_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/audio_spinner"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:entries="@array/audio"
+        app:layout_constraintBottom_toBottomOf="@+id/format_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/format_spinner"
+        app:layout_constraintTop_toTopOf="@+id/format_spinner" />
+
+    <Button
+        android:id="@+id/make_file_button"
+        android:layout_width="104dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="250dp"
+        android:text="제작"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
